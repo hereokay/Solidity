@@ -11,8 +11,8 @@ contract Uniswap is ERC20 {
     // ETH <> A 
     address tokenAddress;
 
-    constructor() ERC20("Uniswap LP","UNI-LP"){
-
+    constructor(address _tokenAddress) ERC20("Uniswap LP","UNI-LP"){
+        tokenAddress = _tokenAddress;
     }
 
     function addLiquidity() public payable {
@@ -36,10 +36,10 @@ contract Uniswap is ERC20 {
         // 2. 해당 비분만큼 Ether, Token을 반환한다.
 
         payable(msg.sender).transfer(etherAmount);
-        
+
         TokenA tokenContract = TokenA(tokenAddress);
         tokenContract.transfer(msg.sender, tokenAmount); // 유저의 토큰을 컨트랙트로 가져옴
-        
+
     }
 
     function etherToTokenSwap() public payable {
