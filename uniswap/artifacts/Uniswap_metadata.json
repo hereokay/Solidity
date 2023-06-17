@@ -6,7 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenAddress",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -59,6 +65,13 @@
 				],
 				"name": "Transfer",
 				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "addLiquidity",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
 			},
 			{
 				"inputs": [
@@ -165,6 +178,13 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "etherToTokenSwap",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -202,6 +222,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "lpTokenAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "removeLiquidity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "symbol",
 				"outputs": [
@@ -212,6 +245,32 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenToEtherSwap",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -336,7 +395,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"uniswap v1.sol": "TokenA"
+			"uniswap v1.sol": "Uniswap"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -383,11 +442,11 @@
 			]
 		},
 		"uniswap v1.sol": {
-			"keccak256": "0x9098e439479b3407ceabaa056a969fdae331c1a91ce1b6e5645f1b8b215b8410",
+			"keccak256": "0xa34510cdde03b0ecdf79d8b13de58a47a988edef3f2dd78a78f541bf09cfb830",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://80bb68816b12086863544112492f16e1c1ecfd26bdfc9f119c32026f043bb371",
-				"dweb:/ipfs/QmPyHcsRaVAGcqwxvj7mnW26qg9DpzTAtD1Kh8aA1RDHMH"
+				"bzz-raw://da5311a892bbbe1184cb0b24c4cb114ea4c8233e9892c58ebfa1beb2ca7e26a2",
+				"dweb:/ipfs/QmcbSvH7pNZs9qgmdSa35R4mZ972QiHU6tk9YSnycjkwAi"
 			]
 		}
 	},

@@ -9,6 +9,7 @@ contract TokenA is ERC20 {
     }
 }
 
+// CPMM
 contract Uniswap is ERC20 {
     // ETH <> A 
     address public tokenAddress;
@@ -29,6 +30,7 @@ contract Uniswap is ERC20 {
     }
 
     function removeLiquidity(uint lpTokenAmount) public {
+
         // 1. LP 소각
         _burn(msg.sender, lpTokenAmount);
 
@@ -62,3 +64,4 @@ contract Uniswap is ERC20 {
     }
 
 }
+
