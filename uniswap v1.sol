@@ -4,7 +4,9 @@ pragma solidity 0.8.19;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract TokenA is ERC20 {
-    constructor() ERC20("TokenA","A"){}
+    constructor() ERC20("TokenA","A"){
+        _mint(msg.sender, 50 * 10^18);
+    }
 }
 
 contract Uniswap is ERC20 {
@@ -39,7 +41,6 @@ contract Uniswap is ERC20 {
 
         TokenA tokenContract = TokenA(tokenAddress);
         tokenContract.transfer(msg.sender, tokenAmount); // 유저의 토큰을 컨트랙트로 가져옴
-
     }
 
     function etherToTokenSwap() public payable {
