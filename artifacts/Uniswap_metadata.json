@@ -442,11 +442,11 @@
 			]
 		},
 		"uniswap v1.sol": {
-			"keccak256": "0xfc48d537171b63e6923c49f1a80cfa164483e8ff5e5c58bfa5f39783233d4840",
+			"keccak256": "0x9098e439479b3407ceabaa056a969fdae331c1a91ce1b6e5645f1b8b215b8410",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fe94a19e194726e030f447529dc358328ed133e4a6ec218bd602a27d64b2bac0",
-				"dweb:/ipfs/QmbezXptJVjJwCktRzCZ8o4LWySwsFiSoTmCHuNrPLbBgT"
+				"bzz-raw://80bb68816b12086863544112492f16e1c1ecfd26bdfc9f119c32026f043bb371",
+				"dweb:/ipfs/QmPyHcsRaVAGcqwxvj7mnW26qg9DpzTAtD1Kh8aA1RDHMH"
 			]
 		}
 	},
