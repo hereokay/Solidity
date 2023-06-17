@@ -9,7 +9,7 @@ contract TokenA is ERC20 {
 
 contract Uniswap is ERC20 {
     // ETH <> A 
-    address tokenAddress;
+    address public tokenAddress;
 
     constructor(address _tokenAddress) ERC20("Uniswap LP","UNI-LP"){
         tokenAddress = _tokenAddress;
@@ -59,6 +59,5 @@ contract Uniswap is ERC20 {
         payable(msg.sender).transfer(etherAmount);
 
     }
-
 
 }
